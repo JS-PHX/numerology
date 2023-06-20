@@ -5,8 +5,27 @@
 //   });
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    var navElement = document.getElementById("userInfo");
+    var button = document.getElementById("myButton");
+  
+    button.addEventListener("click", function() {
+      if (!navElement.classList.contains("top")) {
+        navElement.classList.add("top");
+        navElement.classList.remove("centered");
+      }
+    });
+  });
+
+  var script = document.createElement('script');
+  script.src = 'https://cdn.jsdelivr.net/npm/inobounce@0.1.6/inobounce.min.js';
+  document.body.appendChild(script);
+
+
 document.addEventListener('DOMContentLoaded', function() {
-    // Your JavaScript code here  
+    // Your JavaScript code here 
+    
+    
 
 
 const button = document.getElementById("myButton"); 
@@ -150,8 +169,8 @@ myElement.style.animation = "none";
     document.getElementById("flowerImage").src = "",
     flowerName.textContent = "",
     flowerText.textContent = "",
-    document.body.style.backgroundColor = "lightblue";
- }
+    body.style.background = "linear-gradient(to bottom, rgb(0, 0, 0, .9), rgba(0, 0, 0, .5), rgba(0, 0, 0, 0))";
+}
 
  const scrollUpButton = document.getElementById("myButton");
 
@@ -426,6 +445,9 @@ if (scrollButton) {
         }
     });
     });
+
+
+      
 // const observer = new IntersectionObserver( (entries) => {
 //     entries.forEach((entry) => {
 //         console.log(entry)
@@ -444,6 +466,9 @@ if (scrollButton) {
         window.scrollTo(0, 0);
     }
 });
+
+inobounce.enable();
+
 
 
 // const navBar = document.getElementById('userInfo');
