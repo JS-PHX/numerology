@@ -22,9 +22,29 @@ document.addEventListener("DOMContentLoaded", function() {
   document.body.appendChild(script);
 
 
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
-    // Your JavaScript code here 
+    var divContainer = document.getElementById('astroDiv');
+    divContainer.addEventListener('mousemove', function(event) {
+      var trail = document.createElement('div');
+      trail.className = 'trail';
     
+      var x = event.clientX - 0;
+      var y = event.clientY - 0;
+      trail.style.left = x + 'px';
+      trail.style.top = y + 'px';
+    
+      this.appendChild(trail);
+    
+      setTimeout(function() {
+        trail.style.opacity = '0';
+        setTimeout(function() {
+          this.removeChild(trail);
+        }.bind(this), 50);
+      }.bind(this), 500);
+    });
     
 
 
