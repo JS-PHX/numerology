@@ -57,7 +57,8 @@ div {
     position: relative;
     display: flex;
     justify-content: center;
-    background-color: rgb(0, 0, 0, .1);
+    background-color: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
     transition: 1.5s all ease;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     font-family: 'Roboto Condensed', sans-serif;
@@ -390,8 +391,9 @@ div {
 }
 
 #astroTitle {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: bolder;    text-align: center;
+  font-family: 'cinzel';
+    font-weight: bolder;    
+    text-align: center;
     font-size: 112px;
     color: white;
     text-shadow: 1px 1px 2px black;
@@ -558,7 +560,7 @@ div {
     height: 100%;
     top: 0;
     left: 0;
-    opacity: .25;
+    opacity: .45;
 
   }
   
