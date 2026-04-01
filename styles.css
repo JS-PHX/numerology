@@ -175,7 +175,7 @@ div {
 }
 
 #gemName {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'cinzel';
     font-weight: bolder;    text-align: center;
     font-size: 112px;
     color: white;
@@ -267,8 +267,9 @@ div {
 
 }
 #flowerName {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: bolder;    text-align: center;
+    font-family: 'cinzel';
+    font-weight: bolder;    
+    text-align: center;
     font-size: 112px;
     color: white;
     text-shadow: 1px 1px 2px black;
@@ -305,8 +306,9 @@ div {
 
 
 #lunarZodiac {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: bolder;    text-align: center;
+  font-family: 'cinzel';
+    font-weight: bolder;    
+    text-align: center;
     font-size: 112px;
     color: white;
     text-shadow: 1px 1px 2px black;
