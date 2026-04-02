@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-  var script = document.createElement('script');
-  script.src = 'https://cdn.jsdelivr.net/npm/inobounce@0.1.6/inobounce.min.js';
-  document.body.appendChild(script);
+//   var script = document.createElement('script');
+//   script.src = 'https://cdn.jsdelivr.net/npm/inobounce@0.1.6/inobounce.min.js';
+//   document.body.appendChild(script);
 
   window.addEventListener('load', () => {
     const canvas = document.getElementById('renderSurface');
@@ -504,7 +504,7 @@ if (scrollButton) {
     }
 });
 
-inobounce.enable();
+// inobounce.enable();
 
 
 

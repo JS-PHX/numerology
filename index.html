@@ -245,10 +245,13 @@
     <canvas id="renderSurface"></canvas>
 
     <script>
-        const script = document.createElement('script');
-            script.src = 'https://cdn.jsdelivr.net/gh/PavelDoGreat/WebGL-Fluid-Simulation@master/script.js';
-            script.onload = () => { /* auto-starts on load */ };
-            document.body.appendChild(script);
+        fetch('https://cdn.jsdelivr.net/gh/PavelDoGreat/WebGL-Fluid-Simulation@master/script.js')
+            .then(r => r.text())
+            .then(code => {
+                const s = document.createElement('script');
+                s.textContent = code;
+                document.body.appendChild(s);
+            });
     </script>
 </body>
 </html>
