@@ -252,6 +252,13 @@
     // =============================================
     (function(){
     const canvas = document.getElementById('renderSurface');
+    // Ensure canvas has pixel dimensions before WebGL init
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    window.addEventListener('resize', () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    });
     let config = {
         SIM_RESOLUTION: 128,
         DYE_RESOLUTION: 1024,
@@ -315,6 +322,7 @@
         let gl = canvas.getContext('webgl2', params);
         const isWebGL2 = !!gl;
         if (!isWebGL2) gl = canvas.getContext('webgl', params) || canvas.getContext('experimental-webgl', params);
+        if (!gl) { console.error('WebGL not supported'); return null; }
         let halfFloat, supportLinearFiltering;
         if (isWebGL2) {
             gl.getExtension('EXT_color_buffer_float');
@@ -364,7 +372,20 @@
         return status == gl.FRAMEBUFFER_COMPLETE;
     }
 
-    const { gl, ext } = getWebGLContext(canvas);
+    const ctx = getWebGLContext(canvas);
+    if (!ctx) return;
+    const { gl, ext } = ctx;
+
+    function resizeCanvas() {
+        let w = canvas.clientWidth || window.innerWidth;
+        let h = canvas.clientHeight || window.innerHeight;
+        if (canvas.width !== w || canvas.height !== h) {
+            canvas.width = w;
+            canvas.height = h;
+            return true;
+        }
+        return false;
+    }
 
     function compileShader(type, source, keywords) {
         source = addKeywords(source, keywords);
@@ -587,12 +608,6 @@
             get read() { return fbo1; }, set read(v) { fbo1=v; },
             get write() { return fbo2; }, set write(v) { fbo2=v; },
             swap() { let tmp=fbo1; fbo1=fbo2; fbo2=tmp; } };
-    }
-
-    function resizeCanvas() {
-        let w = canvas.clientWidth, h = canvas.clientHeight;
-        if (canvas.width != w || canvas.height != h) { canvas.width=w; canvas.height=h; return true; }
-        return false;
     }
 
     function getResolution(resolution) {
