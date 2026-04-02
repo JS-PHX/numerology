@@ -245,13 +245,9 @@
     <canvas id="renderSurface"></canvas>
 
     <script>
-        fetch('https://cdn.jsdelivr.net/gh/PavelDoGreat/WebGL-Fluid-Simulation@master/script.js')
-            .then(r => r.text())
-            .then(code => {
-                const s = document.createElement('script');
-                s.textContent = code;
-                document.body.appendChild(s);
-            });
+        const canvas = document.getElementById('renderSurface');
+        let myFluid = new Fluid(canvas);
+        myFluid.activate();
     </script>
 </body>
 </html>

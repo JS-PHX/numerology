@@ -554,16 +554,8 @@ div {
     
   }
 
-  #fluid-canvas, canvas:not(#canvas1) {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: .25;
-  }
 
-  /* #renderSurface {
+  #renderSurface {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -579,5 +571,5 @@ div {
     background-color: transparent;
     opacity: .1;
     z-index: -999;
-  } */
+  }
   
