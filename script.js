@@ -21,7 +21,24 @@ document.addEventListener("DOMContentLoaded", function() {
   script.src = 'https://cdn.jsdelivr.net/npm/inobounce@0.1.6/inobounce.min.js';
   document.body.appendChild(script);
 
+  window.addEventListener('load', () => {
+    const canvas = document.getElementById('renderSurface');
+    if (!canvas) return;
+    
+    // Fire a fake pointer event to auto-start the fluid sim
+    setTimeout(() => {
+        const event = new PointerEvent('pointerdown', {
+            clientX: window.innerWidth / 2,
+            clientY: window.innerHeight / 2,
+            bubbles: true,
+            cancelable: true
+        });
+        canvas.dispatchEvent(event);
 
+        const eventUp = new PointerEvent('pointerup', { bubbles: true });
+        canvas.dispatchEvent(eventUp);
+    }, 500);
+});
 
 
 
