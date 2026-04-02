@@ -550,9 +550,8 @@ div {
   canvas {
     width: 100vw;
     height: 100vh;
-    background-color: black;
-    
-  }
+    background-color: transparent;
+}
 
 
   #renderSurface {
@@ -568,15 +567,15 @@ div {
     height: 100%;
     z-index: 0;
     pointer-events: none;
-    background: radial-gradient(ellipse at 20% 50%, rgba(120, 40, 200, 0.15) 0%, transparent 60%),
-                radial-gradient(ellipse at 80% 20%, rgba(40, 100, 200, 0.15) 0%, transparent 60%),
-                radial-gradient(ellipse at 60% 80%, rgba(200, 40, 100, 0.15) 0%, transparent 60%);
+    background: radial-gradient(ellipse at 20% 50%, rgba(120, 40, 200, 0.5) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 20%, rgba(40, 100, 200, 0.5) 0%, transparent 60%),
+                radial-gradient(ellipse at 60% 80%, rgba(200, 40, 100, 0.5) 0%, transparent 60%);
     animation: ambientFlow 12s ease-in-out infinite alternate;
 }
 
 @keyframes ambientFlow {
-    0%   { opacity: 0.6; transform: scale(1); }
-    33%  { opacity: 1; transform: scale(1.05) translate(2%, 3%); }
-    66%  { opacity: 0.8; transform: scale(0.98) translate(-2%, -2%); }
-    100% { opacity: 1; transform: scale(1.03) translate(3%, -3%); }
+    0%   { opacity: 0.8; transform: scale(1); }
+    33%  { opacity: 1; transform: scale(1.1) translate(3%, 5%); }
+    66%  { opacity: 0.9; transform: scale(0.95) translate(-3%, -3%); }
+    100% { opacity: 1; transform: scale(1.05) translate(5%, -5%); }
 }
