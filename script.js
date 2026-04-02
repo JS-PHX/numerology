@@ -78,7 +78,12 @@ myElement.style.animation = "none";
 
  button.addEventListener("click", function() {
  // myDropdown.addEventListener("change", function() {
- var monthValue = monthList.value;
+    var dateValue = new Date(document.getElementById('datePicker').value + 'T00:00:00');
+    var monthNames = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    var monthValue = monthNames[dateValue.getMonth()];
+    var dayValue = String(dateValue.getDate());
+    var yearValue = String(dateValue.getFullYear());
+//  var monthValue = monthList.value;
 
  if (monthValue === "Jan") {
     //  document.body.style.backgroundColor = "#7b0c00",
@@ -225,7 +230,12 @@ myElement.style.animation = "none";
 
  newButton.addEventListener("click", function() {
  // get the selected value from the dropdown list
- var yearValue = yearList.value;
+    var dateValue = new Date(document.getElementById('datePicker').value + 'T00:00:00');
+    var monthNames = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    var monthValue = monthNames[dateValue.getMonth()];
+    var dayValue = String(dateValue.getDate());
+    var yearValue = String(dateValue.getFullYear());
+//  var yearValue = yearList.value;
 
  if (yearValue === "1924" || yearValue === "1936" || yearValue === "1948" || yearValue === "1960" || yearValue === "1972" || yearValue === "1984" || yearValue === "1996" || yearValue === "2008" || yearValue === "2020") {
      document.getElementById("lunarZodiac").textContent = "Year of the Rat";
@@ -307,8 +317,13 @@ if (scrollButton) {
  let astroButton = document.getElementById("myButton"); 
 
  astroButton.addEventListener("click", function() {
-    var monthValue = monthList.value;
-    var dayValue = dayList.value;
+    var dateValue = new Date(document.getElementById('datePicker').value + 'T00:00:00');
+    var monthNames = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    var monthValue = monthNames[dateValue.getMonth()];
+    var dayValue = String(dateValue.getDate());
+    var yearValue = String(dateValue.getFullYear());
+    // var monthValue = monthList.value;
+    // var dayValue = dayList.value;
 
     if (monthValue === "Jan" && (dayValue === "20" || dayValue === "21" || dayValue === "22" || dayValue === "23" || dayValue === "24" || dayValue === "25" || dayValue === "26" || dayValue === "27" || dayValue === "28" || dayValue === "29" || dayValue === "30" || dayValue === "31")){
         document.getElementById("astroTitle").textContent = "Aquarius",
