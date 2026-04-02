@@ -31,6 +31,7 @@ body {
     margin: 0;
     height: 100%;
     overflow: hidden;
+    transition: background 1.5s ease
     /* background-image: url(/stars.jpg);
     background-size: cover;
     background-position: center;
@@ -63,6 +64,7 @@ div {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: bolder;    
     z-index: 999;
+    backdrop-filter: blur(12px);
 }
 
 #userInfo:hover {
@@ -175,8 +177,10 @@ div {
 }
 
 #gemName {
-    font-family: 'cinzel';
-    font-weight: bolder;    text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 0.15em;
+    font-weight: bolder;    
+    text-align: center;
     font-size: 112px;
     color: white;
     text-shadow: 1px 1px 2px black;
