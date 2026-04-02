@@ -1,3 +1,4 @@
+
 // document.addEventListener('DOMContentLoaded', function() {
 //     var container = document.getElementById('divContainer');
 //     iNoBounce.enable(container);
@@ -63,8 +64,8 @@ myElement.style.animation = "none";
  var monthValue = monthList.value;
 
  if (monthValue === "Jan") {
+    //  document.body.style.backgroundColor = "#7b0c00",
     document.body.style.background = "linear-gradient(to bottom, rgba(123, 12, 1, 1), rgba(0, 0, 0, .75), rgba(0, 0, 0, 0))";
-    if (window.setFluidColors) window.setFluidColors("Jan");
     myGem.textContent = "Garnet",
      document.getElementById("gemImg").src = "./gems/garnet.png"
      myParagraph.textContent = "Legends say the garnet offers protection from nightmares and gives its wearer guidance in the night for those born in January. The red color of the gemstone symbolizes faith, love and courage. Wearing garnet can reportedly protect children from nightmares and can promote overall self-worth.",
@@ -72,8 +73,8 @@ myElement.style.animation = "none";
      flowerName.textContent = "Carnation",
      flowerText.textContent = "Fitting for a January flower, carnations prefer cool temperatures and come in a variety of colors, each with a unique symbol. Pink carnations represent a mother's love, for example, while dark red carnations indicate deep love, and white ones mean pure love.";
  } else if (monthValue === "Feb") {
+    //  document.body.style.backgroundColor = "#9510d0",
      body.style.background = "linear-gradient(to bottom, rgb(149, 16, 208), rgba(0, 0, 0, 1), rgba(0, 0, 0, .75), rgba(0, 0, 0, 0))";
-     if (window.setFluidColors) window.setFluidColors("Feb");
 
      myGem.textContent = "Amethyst",
      document.getElementById("gemImg").src = "./gems/amethyst.png"
@@ -82,8 +83,8 @@ myElement.style.animation = "none";
      flowerName.textContent = "Violet",
      flowerText.textContent = "Violets are named after their purple color, but can also be found in yellow, blue, and cream shades. The three primary traits associated with violets are modesty, humility, and faithfulness.";
  } else if (monthValue === "Mar") {
+    //  document.body.style.backgroundColor = "#73cdff",
      body.style.background = "linear-gradient(to bottom, rgb(115, 205, 255), rgba(0, 0, 0, .75), rgba(0, 0, 0, 0))";
-     if (window.setFluidColors) window.setFluidColors("Mar");
 
      myGem.textContent = "Aquamarine",
      document.getElementById("gemImg").src = "./gems/aquamarine.png"
@@ -92,8 +93,8 @@ myElement.style.animation = "none";
      flowerName.textContent = "Daffodil",
      flowerText.textContent = "Daffodils are one of the first flowers to bloom in spring, which connects to their representation of rebirth and new beginnings. They also have various region-specific connotations. For example, in Wales and China they are believed to bring wealth.";
  }else if (monthValue === "Apr") {
+    //  document.body.style.backgroundColor = "#e0fbff",
      body.style.background = "linear-gradient(to bottom, rgb(224, 251, 255), rgba(0, 0, 0, .75), rgba(0, 0, 0, 0))";
-     if (window.setFluidColors) window.setFluidColors("Apr");
 
      myGem.textContent = "Diamond",
      document.getElementById("gemImg").src = "./gems/diamond.png"
@@ -102,8 +103,8 @@ myElement.style.animation = "none";
      flowerName.textContent = "Daisy",
      flowerText.textContent = "Gerbera daises were discovered in South Africa in the late 1800s by a Scotsman who brought them home to Europe. They have come to symbolize true love, new beginnings and purity. ";
  }else if (monthValue === "May") {
+    //  document.body.style.backgroundColor = "#009B77",
      body.style.background = "linear-gradient(to bottom, rgb(0, 155, 119), rgba(0, 0, 0, .75), rgba(0, 0, 0, 0))";
-     if (window.setFluidColors) window.setFluidColors("May");
 
      myGem.textContent = "Emerald",
      document.getElementById("gemImg").src = "./gems/emerald.png"
@@ -112,8 +113,8 @@ myElement.style.animation = "none";
      flowerName.textContent = "Lily of the Valley",
      flowerText.textContent = "Lily of the Valleys bloom in May, making them an apt choice for May's official birth flower. They are characterized by their bell shaped heads, and represent sweetness, motherhood, and humility."
  }else if (monthValue === "Jun") {
+    //  document.body.style.backgroundColor = "#E2DFD2",
      body.style.background = "linear-gradient(to bottom, rgb(226, 223, 210), rgba(0, 0, 0, .75), rgba(0, 0, 0, 0))";
-     if (window.setFluidColors) window.setFluidColors("Jun");
 
      myGem.textContent = "Pearl",
      document.getElementById("gemImg").src = "./gems/pearl.png"
@@ -122,8 +123,8 @@ myElement.style.animation = "none";
      flowerName.textContent = "Rose",
      flowerText.textContent = "Red roses need no introduction as one of the most popular, romantic flowers, but you may not know that other colored roses also have special meanings. Pink roses symbolize admiration and happiness, and orange ones indicate excitement and desire."
  }else if (monthValue === "Jul") {
+    //  document.body.style.backgroundColor = "#eb1246",
      body.style.background = "linear-gradient(to bottom, rgb(235, 18, 70), rgba(0, 0, 0, .75), rgba(0, 0, 0, 0))";
-     if (window.setFluidColors) window.setFluidColors("Jul");
 
      myGem.textContent = "Ruby",
      document.getElementById("gemImg").src = "./gems/ruby.png"
@@ -132,8 +133,8 @@ myElement.style.animation = "none";
      flowerName.textContent = "Larkspur",
      flowerText.textContent = "With their height and vibrant color, larkspurs are an attractive flower, but can be dangerous for gardens due to the fact that they are poisonous. As July's birth flower, they symbolize positivity and dedication."
  }else if (monthValue === "Aug") {
+    //  document.body.style.backgroundColor = "#B4C424",
      body.style.background = "linear-gradient(to bottom, rgb(180, 196, 36), rgba(0, 0, 0, .75), rgba(0, 0, 0, 0))";
-     if (window.setFluidColors) window.setFluidColors("Aug");
 
      myGem.textContent = "Peridot",
      document.getElementById("gemImg").src = "./gems/peridot.png"
@@ -142,8 +143,8 @@ myElement.style.animation = "none";
      flowerName.textContent = "Gladiolus",
      flowerText.textContent = "Today, the gladiolus stands for integrity, remembrance, and strength. In Victorian times however, it was associated with infatuation, since romantics believed the flowers could pierce hearts with their beauty."
  }else if (monthValue === "Sep") {
+    //  document.body.style.backgroundColor = "#0F52BA",
      body.style.background = "linear-gradient(to bottom, rgb(15, 82, 186), rgba(0, 0, 0, .75), rgba(0, 0, 0, 0))";
-     if (window.setFluidColors) window.setFluidColors("Sep");
 
      myGem.textContent = "Sapphire",
      document.getElementById("gemImg").src = "./gems/sapphire.png"
@@ -152,8 +153,8 @@ myElement.style.animation = "none";
      flowerName.textContent = "Aster",
      flowerText.textContent = "Asters are named after the Greek word for 'star' due to their star-like appearance. They have a variety of associations, including love, wisdom, and faith, and have been the subject of famous artworks by Claude Monet and Vincent van Gogh."
  }else if (monthValue === "Oct") {
+    //  document.body.style.backgroundColor = "#ffcfef",
      body.style.background = "linear-gradient(to bottom, rgb(255, 207, 239), rgba(0, 0, 0, .75), rgba(0, 0, 0, 0))";
-     if (window.setFluidColors) window.setFluidColors("Oct");
 
      myGem.textContent = "Tourmaline",
      document.getElementById("gemImg").src = "./gems/tourmaline.png"
@@ -162,8 +163,8 @@ myElement.style.animation = "none";
      flowerName.textContent = "Marigold",
      flowerText.textContent = "With its bright orange color, the Marigold is the perfect companion to fall pumpkins as the representatives for October. This flower comes from the Mediterranean, and evokes courage, passion, and creativity."
  }else if (monthValue === "Nov") {
+    //  document.body.style.backgroundColor = "#ffc87c",
      body.style.background = "linear-gradient(to bottom, rgb(255, 200, 124), rgba(0, 0, 0, .75), rgba(0, 0, 0, 0))";
-     if (window.setFluidColors) window.setFluidColors("Nov");
 
      myGem.textContent = "Topaz",
      document.getElementById("gemImg").src = "./gems/topaz.png"
@@ -172,8 +173,8 @@ myElement.style.animation = "none";
      flowerName.textContent = "Chrysantheum",
      flowerText.textContent = "The Chrysanthemum is the only birth flower of November and has a long history, dating back to 15th century China when it was first cultivated. It symbolizes joy, longevity, and loyalty."
  }else if (monthValue === "Dec") {
+    //  document.body.style.backgroundColor = "#001e80",
      body.style.background = "linear-gradient(to bottom, rgb(0, 30, 128), rgba(0, 0, 0, .75), rgba(0, 0, 0, 0))";
-     if (window.setFluidColors) window.setFluidColors("Dec");
 
      myGem.textContent = "Tanzanite",
      document.getElementById("gemImg").src = "./gems/tanzanite.png"
@@ -523,3 +524,5 @@ function scrollToTop() {
         let progressBar = document.querySelector(".progress-bar");
         progressBar.style.width = percentScrolled + "%";
       });
+      
+
