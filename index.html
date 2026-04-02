@@ -14,7 +14,6 @@
     <script src="https://cdn.jsdelivr.net/npm/inobounce@0.1.6/inobounce.min.js"></script>
     <script src="/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/inobounce@0.1.6/inobounce.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fluid-canvas@latest"></script>
 <body id="gemColor">
     <script src="script.js"></script>
         
@@ -246,9 +245,10 @@
     <canvas id="renderSurface"></canvas>
 
     <script>
-        const canvas = document.getElementById('renderSurface');
-        let myFluid = new Fluid(canvas);
-        myFluid.activate();
+        const script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/gh/PavelDoGreat/WebGL-Fluid-Simulation@master/script.js';
+            script.onload = () => { /* auto-starts on load */ };
+            document.body.appendChild(script);
     </script>
 </body>
 </html>
