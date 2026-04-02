@@ -554,10 +554,15 @@ div {
 }
 
 
-  #renderSurface {
-    display: none;
+#renderSurface {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: .25;
+  z-index: 1;
 }
-
 #gemColor::before {
     content: '';
     position: fixed;
