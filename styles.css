@@ -284,9 +284,9 @@ div {
 #flowerImage {
   position: absolute;
   left: -50px;
-  max-height: 125vh;
+  max-height: 115vh;
   width: auto;
-  transform: rotate(45deg) translateX(-10%);
+  transform: rotate(45deg) translateX(-15%);
   opacity: 0.9;
   transition: all ease 2s;
 }
