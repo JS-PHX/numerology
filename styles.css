@@ -278,7 +278,7 @@ div {
   width: 100%;
   display: flex;
   align-items: center;
-  overflow: hidden;
+  overflow: visible;
   margin-top: 1rem;
   background: transparent;
 }
