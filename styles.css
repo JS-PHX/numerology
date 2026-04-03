@@ -51,6 +51,7 @@ div {
     width: 100%;
     height: auto;
     margin: auto;
+    overflow: visible;
 }
 
 
@@ -267,6 +268,7 @@ div {
   text-align: center;
   z-index: 999;
   background: transparent;
+  overflow: visible;
 }
 
 
@@ -320,6 +322,7 @@ div {
   z-index: 999;
   letter-spacing: 0.15em;
   background: transparent;
+  overflow: visible;
 }
 
 
