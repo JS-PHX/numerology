@@ -271,6 +271,7 @@ div {
     transform: translate(-50%, -50%);
     height: 100vh;
     z-index: 999;
+    min-height: 100vh;
 }
 #flowerImage {
     transform: rotate(45deg);
