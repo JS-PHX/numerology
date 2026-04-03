@@ -274,14 +274,27 @@ div {
 }
 
 #flowerImageDiv {
-  min-height: 50vh;
+  position: relative;
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+}
+
+#flowerImage {
+  position: absolute;
+  right: -50px;
+  max-height: 90vh;
+  width: auto;
+  transform: rotate(-25deg) translateX(10%);
+  opacity: 0.9;
+  transition: all ease 2s;
 }
 
 #flowerInfo {
+  position: relative;
+  z-index: 999;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
   text-align: center;
@@ -290,16 +303,7 @@ div {
   text-shadow: 1px 1px 2px black;
   width: 75%;
   line-height: 3rem;
-  margin-top: 3rem;
-  z-index: 999;
-  user-select: none;
-}
-
-#flowerImage {
-  height: 55%;
   margin: 0 auto;
-  display: block;
-  transition: all ease 2s;
 }
 
 #flowerName {
