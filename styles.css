@@ -266,6 +266,7 @@ div {
   margin-top: .5rem;
   text-align: center;
   z-index: 999;
+  background: transparent;
 }
 
 
@@ -277,6 +278,7 @@ div {
   align-items: center;
   overflow: hidden;
   margin-top: 1rem;
+  background: transparent;
 }
 
 #flowerImage {
