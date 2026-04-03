@@ -280,14 +280,15 @@ div {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  margin-top: 15rem;
 }
 
 #flowerImage {
   position: absolute;
-  right: -50px;
+  left: -50px;
   max-height: 90vh;
   width: auto;
-  transform: rotate(-25deg) translateX(10%);
+  transform: rotate(25deg) translateX(-10%);
   opacity: 0.9;
   transition: all ease 2s;
 }
@@ -305,7 +306,6 @@ div {
   line-height: 3rem;
   margin: 0 auto;
 }
-
 #flowerName {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
