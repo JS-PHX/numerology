@@ -264,10 +264,13 @@ div {
 
 #flowerDiv {
   margin-top: 10rem;
-  height: auto;
-  min-height: 100vh;
-  z-index: 999;
   text-align: center;
+  z-index: 999;
+}
+#flowerDiv2 {
+  text-align: center;
+  z-index: 999;
+  margin-bottom: 10rem;
 }
 
 #flowerImageDiv {
