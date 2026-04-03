@@ -267,11 +267,7 @@ div {
   text-align: center;
   z-index: 999;
 }
-#flowerDiv2 {
-  text-align: center;
-  z-index: 999;
-  margin-bottom: 10rem;
-}
+
 
 #flowerImageDiv {
   position: relative;
@@ -280,7 +276,7 @@ div {
   display: flex;
   align-items: center;
   overflow: hidden;
-  margin-top: 15rem;
+  margin-top: 10rem;
 }
 
 #flowerImage {
