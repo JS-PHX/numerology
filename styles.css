@@ -316,9 +316,10 @@ div {
   color: white;
   text-shadow: 1px 1px 2px black;
   text-transform: uppercase;
-  margin: 3rem auto;
+  margin: 2rem auto;
   z-index: 999;
   letter-spacing: 0.15em;
+  background: transparent;
 }
 
 
