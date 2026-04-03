@@ -111,7 +111,7 @@ myElement.style.animation = "none";
      myGem.textContent = "Aquamarine",
      document.getElementById("gemImg").src = "./gems/aquamarine.png"
      myParagraph.textContent = "In ancient times, people believed aquamarine, the traditional birthstone of March, protected seafarers in helping them clearly remember their loved ones when they were far away at sea. Wearing aquamarine promotes creativity, hope, self-expression and courage. Wear this gemstone to boost love, youth, good health and overall happiness.",
-     document.getElementById("flowerImage").src = "./Flowers/Daffodil.png",
+     document.getElementById("flowerImage").src = "./Flowers/daffodil.png",
      flowerName.textContent = "Daffodil",
      flowerText.textContent = "Daffodils are one of the first flowers to bloom in spring, which connects to their representation of rebirth and new beginnings. They also have various region-specific connotations. For example, in Wales and China they are believed to bring wealth.";
  }else if (monthValue === "Apr") {
@@ -121,7 +121,7 @@ myElement.style.animation = "none";
      myGem.textContent = "Diamond",
      document.getElementById("gemImg").src = "./gems/diamond.png"
      myParagraph.textContent = "Diamonds have been the traditional symbol of love since ancient Greece and the sparkling birthstone for April-born babies. This gemstone is the symbol of eternal love and courage. This gem protects its wearers from insanity. People believe diamonds increase energy, both positive and negative. They also treat dizziness and vertigo and can detoxify the body and cure allergies.",
-     document.getElementById("flowerImage").src = "./Flowers/Daisy.png", 
+     document.getElementById("flowerImage").src = "./Flowers/daisy.png", 
      flowerName.textContent = "Daisy",
      flowerText.textContent = "Gerbera daises were discovered in South Africa in the late 1800s by a Scotsman who brought them home to Europe. They have come to symbolize true love, new beginnings and purity. ";
  }else if (monthValue === "May") {
@@ -151,7 +151,7 @@ myElement.style.animation = "none";
      myGem.textContent = "Ruby",
      document.getElementById("gemImg").src = "./gems/ruby.png"
      myParagraph.textContent = "The vivid gem of ruby is symbolic of July birthdays. The gemstones are supposed to protect against misfortune and allow their wearer to live in harmony with others. Rubies are red, which symbolizes strength and courage. They can support the emotional health of the wearer. Rubies encourage the removal of negative energies from your path and can treat exhaustion and lethargy.",
-     document.getElementById("flowerImage").src = "./Flowers/Larkspur.png",
+     document.getElementById("flowerImage").src = "./Flowers/larkspur.png",
      flowerName.textContent = "Larkspur",
      flowerText.textContent = "With their height and vibrant color, larkspurs are an attractive flower, but can be dangerous for gardens due to the fact that they are poisonous. As July's birth flower, they symbolize positivity and dedication."
  }else if (monthValue === "Aug") {
@@ -171,7 +171,7 @@ myElement.style.animation = "none";
      myGem.textContent = "Sapphire",
      document.getElementById("gemImg").src = "./gems/sapphire.png"
      myParagraph.textContent = "The popular imagination portrays the majestic sapphire gemstone as a symbol of truth and protection to those born in September. The blue sapphire gemstone brings success to all who wear it. Sapphires reduce pain and demonstrate purity, wisdom, faith, loyalty and serenity in the wearer. Sapphires also have a reputation for treating blood disorders and excessive bleeding.",
-     document.getElementById("flowerImage").src = "./Flowers/Aster.png",
+     document.getElementById("flowerImage").src = "./Flowers/aster.png",
      flowerName.textContent = "Aster",
      flowerText.textContent = "Asters are named after the Greek word for 'star' due to their star-like appearance. They have a variety of associations, including love, wisdom, and faith, and have been the subject of famous artworks by Claude Monet and Vincent van Gogh."
  }else if (monthValue === "Oct") {
@@ -181,7 +181,7 @@ myElement.style.animation = "none";
      myGem.textContent = "Tourmaline",
      document.getElementById("gemImg").src = "./gems/tourmaline.png"
      myParagraph.textContent = "Ancient legends say the opal gemstone will soothe away sadness and envy for those with October birthdays. The tourmaline gem also represents the birth month of October with its resistance to breaking and scratching. Both opal and tourmaline gems possess healing and restorative qualities and are symbols of hope, innocence and creativity. Opals strengthen the wearer's memory and increase the will to live. Tourmaline can relieve stress and increase mental alertness.",
-     document.getElementById("flowerImage").src = "./Flowers/Marigold.png",
+     document.getElementById("flowerImage").src = "./Flowers/marigold.png",
      flowerName.textContent = "Marigold",
      flowerText.textContent = "With its bright orange color, the Marigold is the perfect companion to fall pumpkins as the representatives for October. This flower comes from the Mediterranean, and evokes courage, passion, and creativity."
  }else if (monthValue === "Nov") {
@@ -191,7 +191,7 @@ myElement.style.animation = "none";
      myGem.textContent = "Topaz",
      document.getElementById("gemImg").src = "./gems/topaz.png"
      myParagraph.textContent = "Citrine traditionally has a reputation for warding off evil thoughts and poisonous snakes. Today, the cheerful citrine, representative of November birthdays, brings success and prosperity to its wearers. Citrine improves intellect and removes negativity from the wearer. Topaz also complements the month of November with its shades of brown, orange and yellow. Both topaz and citrine promote health and wellness in the mind and body. They also protect their wearers from negative influences.",
-     document.getElementById("flowerImage").src = "./Flowers/Chrys.png",
+     document.getElementById("flowerImage").src = "./Flowers/chrys.png",
      flowerName.textContent = "Chrysantheum",
      flowerText.textContent = "The Chrysanthemum is the only birth flower of November and has a long history, dating back to 15th century China when it was first cultivated. It symbolizes joy, longevity, and loyalty."
  }else if (monthValue === "Dec") {
