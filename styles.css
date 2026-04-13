@@ -90,7 +90,7 @@ div {
 
 
 #myButton {
-  /* background: transparent !important; */
+  background: transparent !important;
   border: none !important;
   box-shadow: none !important;
   -webkit-appearance: none !important;
