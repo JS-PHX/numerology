@@ -613,8 +613,8 @@ div {
 }
 
 @keyframes galaxyFlash {
-  0%   { opacity: 0; filter: hue-rotate(0deg) blur(25px); transform: scale(0.95); }
-  20%  { opacity: .5; filter: hue-rotate(60deg) blur(10px); transform: scale(1); }
-  60%  { opacity: .5; filter: hue-rotate(120deg) blur(10px); transform: scale(1.02); }
-  100% { opacity: 0; filter: hue-rotate(180deg) blur(25px); transform: scale(1.1); }
+  0%   { opacity: 0; filter: hue-rotate(0deg) blur(50px); transform: scale(0.95); }
+  20%  { opacity: .5; filter: hue-rotate(60deg) blur(25px); transform: scale(1); }
+  60%  { opacity: .5; filter: hue-rotate(120deg) blur(25px); transform: scale(1.02); }
+  100% { opacity: 0; filter: hue-rotate(180deg) blur(50px); transform: scale(1.1); }
 }
