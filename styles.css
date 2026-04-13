@@ -282,6 +282,7 @@ div {
   overflow: visible;
   margin-top: 1rem;
   background: transparent;
+  background-color: blueviolet;
 }
 
 #flowerImage {
@@ -292,6 +293,7 @@ div {
   transform: rotate(45deg) translateX(-15%);
   opacity: 0.9;
   transition: all ease 2s;
+  background-color: aqua;
 }
 
 #flowerInfo {
@@ -309,6 +311,7 @@ div {
   text-shadow: 2px 2px 8px black;
   width: 70%;
   line-height: 3rem;
+  background-color: greenyellow;
 }
 
 #flowerName {
