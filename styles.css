@@ -341,11 +341,10 @@ div {
   text-shadow: 1px 1px 2px black;
   letter-spacing: 0.15em;
     position: relative; 
-    margin-top: 7.5rem;
+    margin-top: 5rem;
     text-transform: uppercase;
     margin: 0;
-    margin: 7.5rem;
-    margin-top: 7.5rem;
+    margin: 5rem;
     z-index: 999;
 }
 #lunarDiv {
