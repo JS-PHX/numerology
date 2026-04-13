@@ -8,6 +8,7 @@
 function fadeOutContent() {
     const elements = document.querySelectorAll('.fade-in');
     elements.forEach(el => {
+        el.style.transition = 'opacity 0.5s ease, filter 0.5s ease, transform 0.5s ease';
         el.classList.remove('fade-in');
     });
 }
