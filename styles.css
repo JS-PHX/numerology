@@ -354,7 +354,6 @@ div {
     align-content: center;
     justify-content: center;
     text-align: center;
-    background-color: blue;
 
 }
 #lunarInfo {
@@ -373,7 +372,6 @@ div {
     margin-top: 7.5rem;  
     z-index: 999;
     user-select: none;
-    background-color: aquamarine;
 
 }
 #lunarImg {
