@@ -558,61 +558,25 @@ function scrollToTop() {
       });
       
 
-      document.getElementById('myButton').addEventListener('click', function() {
-        const overlay = document.createElement('div');
-        overlay.style.cssText = `
-            position: fixed;
-            top: 0; left: 0;
-            width: 100vw; height: 100vh;
-            pointer-events: none;
-            z-index: 9999;
-        `;
-    
-        const points = [
-            [20,15],[35,40],[50,20],[65,45],[80,25],
-            [15,60],[30,75],[50,55],[70,70],[85,60],
-            [25,85],[50,90],[75,80],[40,30],[60,65]
-        ];
-    
-        points.forEach(([x, y], i) => {
-            const star = document.createElement('div');
-            star.style.cssText = `
-                position: absolute;
-                left: ${x}%; top: ${y}%;
-                width: 3px; height: 3px;
+      document.getElementById('myButton').addEventListener('click', function(e) {
+        for (let i = 0; i < 20; i++) {
+            const spark = document.createElement('div');
+            spark.style.cssText = `
+                position: fixed;
+                left: ${e.clientX}px;
+                top: ${e.clientY}px;
+                width: 4px;
+                height: 4px;
                 border-radius: 50%;
-                background: white;
-                box-shadow: 0 0 6px 2px rgba(255,255,255,0.8);
-                opacity: 0;
-                animation: starFlash 1.5s ease ${i * 0.05}s forwards;
+                pointer-events: none;
+                z-index: 9999;
+                background: hsl(${Math.random() * 360}, 100%, 70%);
+                transform: translate(-50%, -50%);
+                animation: sparkFly 0.8s ease forwards;
+                --dx: ${(Math.random() - 0.5) * 200}px;
+                --dy: ${(Math.random() - 0.5) * 200}px;
             `;
-            overlay.appendChild(star);
-        });
-    
-        // Draw lines between nearby stars using canvas
-        const canvas = document.createElement('canvas');
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-        canvas.style.cssText = 'position:absolute;top:0;left:0;opacity:0;animation:starFlash 1.5s ease 0.3s forwards;';
-        const ctx = canvas.getContext('2d');
-        
-        points.forEach(([x1, y1], i) => {
-            points.forEach(([x2, y2], j) => {
-                if (i >= j) return;
-                const dist = Math.hypot((x2-x1), (y2-y1));
-                if (dist < 30) {
-                    ctx.beginPath();
-                    ctx.moveTo(x1/100 * window.innerWidth, y1/100 * window.innerHeight);
-                    ctx.lineTo(x2/100 * window.innerWidth, y2/100 * window.innerHeight);
-                    ctx.strokeStyle = 'rgba(255,255,255,0.3)';
-                    ctx.lineWidth = 0.5;
-                    ctx.stroke();
-                }
-            });
-        });
-    
-        overlay.appendChild(canvas);
-        document.body.appendChild(overlay);
-        setTimeout(() => overlay.remove(), 2500);
+            document.body.appendChild(spark);
+            setTimeout(() => spark.remove(), 800);
+        }
     });
-
