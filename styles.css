@@ -611,3 +611,10 @@ div {
   75%  { background-position: 50% 0%, 100% 50%, 0% 50%; filter: hue-rotate(135deg); }
   100% { background-position: 0% 100%, 0% 0%, 100% 50%; filter: hue-rotate(180deg); }
 }
+
+@keyframes starFlash {
+  0% { opacity: 0; transform: scale(0.5); }
+  30% { opacity: 1; transform: scale(1.2); }
+  70% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0.8); }
+}
