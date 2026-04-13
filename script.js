@@ -524,13 +524,19 @@ if (scrollButton) {
 //     const hiddenElements = document.querySelectorAll(".hidden");
 //     hiddenElements.forEach((el) => observer.observe(el));
 
-    window.onbeforeunload = function() {
-        window.scrollTo(0, 0);
-    }
-    
+window.onbeforeunload = function() {
+    window.scrollTo(0, 0);
+}
+
+    window.scrollTo(0, 0);
+    setTimeout(() => {
+        document.querySelectorAll('.fade').forEach(el => {
+            el.classList.add('fade-in');
+        });
+    }, 100);
+
 }, 500);
 });
-
 
 
 // inobounce.enable();
