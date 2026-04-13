@@ -92,7 +92,7 @@ div {
 #myButton {
   background: transparent;
   border: none;
-  color: white;
+  /* color: white; */
   font-family: 'Josefin Sans', sans-serif;
   font-size: 14px;
   letter-spacing: 0.2em;
