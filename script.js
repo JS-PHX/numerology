@@ -40,6 +40,10 @@ document.addEventListener("DOMContentLoaded", function() {
     // ─── Main button click ──────────────────────────────────────────────────
     button.addEventListener("click", function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
+        document.querySelectorAll('.fade-in').forEach(el => {
+            el.style.transition = 'opacity 0.4s ease';
+            el.classList.remove('fade-in');
+        });
 
         var { monthValue, dayValue, yearValue } = getDateValues();
 
