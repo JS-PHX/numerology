@@ -40,6 +40,23 @@ document.addEventListener("DOMContentLoaded", function() {
     // ─── Main button click ──────────────────────────────────────────────────
     button.addEventListener("click", function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
+        const overlay = document.createElement('div');
+        overlay.style.cssText = `
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw; height: 100vh;
+            z-index: 99999;
+            pointer-events: none;
+            animation: galaxyFlash 1s ease forwards;
+            background: radial-gradient(ellipse at center, 
+                white 0%, 
+                rgba(180, 0, 255, 0.9) 20%, 
+                rgba(0, 200, 255, 0.8) 40%, 
+                rgba(255, 0, 150, 0.7) 60%, 
+                rgba(0, 0, 0, 0) 100%);
+        `;
+        document.body.appendChild(overlay);
+        setTimeout(() => overlay.remove(), 1000);
         document.querySelectorAll('.fade-in').forEach(el => {
             el.style.transition = 'opacity 0.4s ease';
             el.classList.remove('fade-in');
@@ -321,11 +338,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     window.onbeforeunload = function() {
         window.scrollTo(0, 0);
-        // Fade out all content
-        document.querySelectorAll('.fade-in').forEach(el => {
-        el.style.transition = 'opacity 0.4s ease';
-        el.classList.remove('fade-in');
-});
     };
 
 });
