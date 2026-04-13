@@ -90,12 +90,7 @@ div {
 
 
 #myButton {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  -webkit-appearance: none !important;
-  appearance: none !important;
-  color: white !important;
+  color: white;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 14px;
   letter-spacing: 0.2em;
@@ -105,6 +100,7 @@ div {
   cursor: pointer;
   opacity: 0.7;
   transition: opacity 0.3s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 #myButton:hover {
