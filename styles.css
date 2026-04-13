@@ -270,7 +270,6 @@ div {
   z-index: 999;
   background: transparent;
   overflow: visible;
-  background-color: greenyellow;
 }
 
 
@@ -283,7 +282,6 @@ div {
   overflow: visible;
   margin-top: 1rem;
   background: transparent;
-  background-color: blueviolet;
 }
 
 #flowerImage {
@@ -294,7 +292,6 @@ div {
   transform: rotate(45deg) translateX(-15%);
   opacity: 0.9;
   transition: all ease 2s;
-  background-color: aqua;
 }
 
 #flowerInfo {
@@ -325,9 +322,8 @@ div {
   margin: 2rem auto;
   z-index: 999;
   letter-spacing: 0.15em;
-  /* background: transparent; */
+  background: transparent;
   overflow: visible;
-  background-color: bisque;
 }
 
 
@@ -341,7 +337,7 @@ div {
   text-shadow: 1px 1px 2px black;
   letter-spacing: 0.15em;
     position: relative; 
-    margin-top: 5rem;
+    margin-top: 1rem;
     text-transform: uppercase;
     margin: 0;
     margin: 5rem;
@@ -358,6 +354,7 @@ div {
     align-content: center;
     justify-content: center;
     text-align: center;
+    background-color: blue;
 
 }
 #lunarInfo {
