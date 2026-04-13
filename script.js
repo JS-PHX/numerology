@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function() {
             }, 50);
         }, 500);
     });
+    const gemImg = document.getElementById('gemImg');
+    gemImg.style.transition = 'all ease 2s';
 
     // ─── Element refs ───────────────────────────────────────────────────────
     const button = document.getElementById("myButton");
