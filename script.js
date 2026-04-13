@@ -49,9 +49,9 @@ document.addEventListener("DOMContentLoaded", function() {
             pointer-events: none;
             background-size: 200% 200%;
             background: 
-                radial-gradient(ellipse at 20% 50%, rgba(120, 40, 200, 0.8) 0%, transparent 60%),
-                radial-gradient(ellipse at 80% 20%, rgba(40, 100, 200, 0.8) 0%, transparent 60%),
-                radial-gradient(ellipse at 60% 80%, rgba(200, 40, 100, 0.8) 0%, transparent 60%);
+                radial-gradient(ellipse at 20% 50%, rgba(120, 40, 200, 0.75) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(40, 100, 200, 0.75) 0%, transparent 50%),
+                radial-gradient(ellipse at 60% 80%, rgba(200, 40, 100, 0.75) 0%, transparent 50%);
             animation: galaxyFlash 1.2s ease forwards;
         `;
         document.body.appendChild(overlay);
