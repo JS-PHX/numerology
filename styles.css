@@ -342,6 +342,7 @@ div {
     margin: 0;
     margin: 5rem;
     z-index: 999;
+    background-color: brown;
 }
 #lunarDiv {
     color:white;
@@ -349,7 +350,7 @@ div {
     font-size: 112px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bolder;    
-    margin-top: 7.5rem;
+    margin-top: 0rem;
     margin-bottom: 7.5rem;
     align-content: center;
     justify-content: center;
