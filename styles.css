@@ -270,6 +270,7 @@ div {
   z-index: 999;
   background: transparent;
   overflow: visible;
+  background-color: greenyellow;
 }
 
 
@@ -311,7 +312,6 @@ div {
   text-shadow: 2px 2px 8px black;
   width: 70%;
   line-height: 3rem;
-  background-color: greenyellow;
 }
 
 #flowerName {
