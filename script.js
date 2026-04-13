@@ -317,6 +317,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     window.onbeforeunload = function() {
         window.scrollTo(0, 0);
+        // Fade out all content
+        document.querySelectorAll('.fade-in').forEach(el => {
+        el.style.transition = 'opacity 0.4s ease';
+        el.classList.remove('fade-in');
+});
     };
 
 });
