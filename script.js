@@ -47,13 +47,12 @@ document.addEventListener("DOMContentLoaded", function() {
             width: 100vw; height: 100vh;
             z-index: 99999;
             pointer-events: none;
-            animation: galaxyFlash 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+            background-size: 200% 200%;
             background: 
-                radial-gradient(ellipse at 30% 50%, rgba(255, 255, 255, 1) 0%, transparent 40%),
-                radial-gradient(ellipse at 70% 50%, rgba(120, 0, 255, 0.9) 0%, transparent 50%),
-                radial-gradient(ellipse at 50% 30%, rgba(0, 200, 255, 0.8) 0%, transparent 50%),
-                radial-gradient(ellipse at 50% 70%, rgba(255, 0, 150, 0.8) 0%, transparent 50%),
-                radial-gradient(ellipse at center, rgba(255, 200, 0, 0.6) 0%, transparent 70%);
+                radial-gradient(ellipse at 20% 50%, rgba(120, 40, 200, 0.8) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 20%, rgba(40, 100, 200, 0.8) 0%, transparent 60%),
+                radial-gradient(ellipse at 60% 80%, rgba(200, 40, 100, 0.8) 0%, transparent 60%);
+            animation: galaxyFlash 1.2s ease forwards;
         `;
         document.body.appendChild(overlay);
         setTimeout(() => overlay.remove(), 1200);
