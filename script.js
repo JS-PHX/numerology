@@ -47,16 +47,16 @@ document.addEventListener("DOMContentLoaded", function() {
             width: 100vw; height: 100vh;
             z-index: 99999;
             pointer-events: none;
-            animation: galaxyFlash 1s ease forwards;
-            background: radial-gradient(ellipse at center, 
-                white 0%, 
-                rgba(180, 0, 255, 0.9) 20%, 
-                rgba(0, 200, 255, 0.8) 40%, 
-                rgba(255, 0, 150, 0.7) 60%, 
-                rgba(0, 0, 0, 0) 100%);
+            animation: galaxyFlash 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+            background: 
+                radial-gradient(ellipse at 30% 50%, rgba(255, 255, 255, 1) 0%, transparent 40%),
+                radial-gradient(ellipse at 70% 50%, rgba(120, 0, 255, 0.9) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 30%, rgba(0, 200, 255, 0.8) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 70%, rgba(255, 0, 150, 0.8) 0%, transparent 50%),
+                radial-gradient(ellipse at center, rgba(255, 200, 0, 0.6) 0%, transparent 70%);
         `;
         document.body.appendChild(overlay);
-        setTimeout(() => overlay.remove(), 1000);
+        setTimeout(() => overlay.remove(), 1200);
         document.querySelectorAll('.fade-in').forEach(el => {
             el.style.transition = 'opacity 0.4s ease';
             el.classList.remove('fade-in');
