@@ -612,7 +612,3 @@ div {
   100% { background-position: 0% 100%, 0% 0%, 100% 50%; filter: hue-rotate(180deg); }
 }
 
-@keyframes sparkFly {
-  0% { opacity: 1; transform: translate(-50%, -50%) translate(0, 0) scale(1); }
-  100% { opacity: 0; transform: translate(-50%, -50%) translate(var(--dx), var(--dy)) scale(0); }
-}

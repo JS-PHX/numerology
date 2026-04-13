@@ -561,22 +561,37 @@ function scrollToTop() {
       document.getElementById('myButton').addEventListener('click', function(e) {
         for (let i = 0; i < 20; i++) {
             const spark = document.createElement('div');
+            const angle = (i / 20) * 360;
+            const distance = 50 + Math.random() * 100;
+            const dx = Math.cos(angle * Math.PI / 180) * distance;
+            const dy = Math.sin(angle * Math.PI / 180) * distance;
+            const color = `hsl(${Math.random() * 360}, 100%, 70%)`;
+    
             spark.style.cssText = `
                 position: fixed;
                 left: ${e.clientX}px;
                 top: ${e.clientY}px;
-                width: 4px;
-                height: 4px;
+                width: 5px;
+                height: 5px;
                 border-radius: 50%;
                 pointer-events: none;
                 z-index: 9999;
-                background: hsl(${Math.random() * 360}, 100%, 70%);
+                background: ${color};
+                box-shadow: 0 0 6px 2px ${color};
+                transition: transform 0.8s ease, opacity 0.8s ease;
                 transform: translate(-50%, -50%);
-                animation: sparkFly 0.8s ease forwards;
-                --dx: ${(Math.random() - 0.5) * 200}px;
-                --dy: ${(Math.random() - 0.5) * 200}px;
+                opacity: 1;
             `;
+    
             document.body.appendChild(spark);
+    
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    spark.style.transform = `translate(calc(-50% + ${dx}px), calc(-50% + ${dy}px))`;
+                    spark.style.opacity = '0';
+                });
+            });
+    
             setTimeout(() => spark.remove(), 800);
         }
     });
