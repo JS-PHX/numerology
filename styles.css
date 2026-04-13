@@ -90,6 +90,7 @@ div {
 
 
 #myButton {
+  display: inline-block;
   color: white !important;
   font-family: 'Josefin Sans', sans-serif !important;
   font-size: 14px !important;
